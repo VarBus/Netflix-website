@@ -1,0 +1,329 @@
+/* Estilos generales */
+body {
+    margin: 0;
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    background-color: #141414;
+    color: #fff;
+  }
+  
+  .App {
+    text-align: center;
+  }
+  
+  /* Barra de navegación */
+  .nav-bar-class {
+    background-color: #141414;
+    padding: 20px 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+  }
+  
+  .nav-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+  }
+  
+  .nav-list {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .nav-list li {
+    margin-right: 20px;
+  }
+  
+  .netflix-logo {
+    height: 40px;
+  }
+  
+  .language-select {
+    background-color: #000;
+    color: #fff;
+    border: 1px solid #333;
+    padding: 5px 10px;
+    border-radius: 3px;
+  }
+  
+  .sign-in-button {
+    background-color: #e50914;
+    color: #fff;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .sign-in-button:hover {
+    background-color: #f40612;
+  }
+  
+  /* Hero Section */
+  .hero-section {
+    padding: 150px 20px 100px;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.8)), url('./Assets/peliculas.jpg');
+    background-size: cover;
+    background-position: center;
+  }
+  
+  .hero-title {
+    font-size: 3rem;
+    margin-bottom: 20px;
+  }
+  
+  .hero-subtitle {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+  }
+  
+  .hero-description {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+  }
+  
+  .email-input-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .email-input {
+    padding: 10px;
+    width: 300px;
+    border: none;
+    border-radius: 3px;
+  }
+  
+  .get-started-button {
+    background-color: #e50914;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .get-started-button:hover {
+    background-color: #f40612;
+  }
+  
+  /* Sección de tendencias */
+  .trending-section {
+    padding: 50px 20px;
+  }
+  
+  .section-title {
+    font-size: 2rem;
+    margin-bottom: 30px;
+  }
+  
+  .trending-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+  }
+  
+  .trending-image {
+    width: 100%;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+  }
+  
+  .trending-image:hover {
+    transform: scale(1.05);
+  }
+  
+  /* Sección de características */
+  .features-section {
+    padding: 50px 20px;
+  }
+  
+  .features-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+  }
+  
+  .feature-card {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    border-radius: 10px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .feature-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+  }
+  
+  .feature-card h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+  }
+  
+  .feature-card p {
+    font-size: 1rem;
+    color: #ccc;
+  }
+  
+  /* Sección de preguntas frecuentes */
+  .faq-section {
+    padding: 50px 20px;
+  }
+  
+  .faq-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+  }
+  
+  .faq-card {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    border-radius: 10px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .faq-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+  }
+  
+  .faq-card h3 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+  }
+  
+  .faq-card p {
+    font-size: 1rem;
+    color: #ccc;
+  }
+  
+  /* Pie de página */
+  .footer-section {
+    background-color: #000;
+    padding: 50px 20px;
+    text-align: left;
+  }
+  
+  .footer-title {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+  }
+  
+  .footer-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 20px;
+  }
+  
+  .footer-link {
+    color: #ccc;
+    text-decoration: none;
+    font-size: 0.9rem;
+    transition: color 0.3s ease;
+  }
+  
+  .footer-link:hover {
+    color: #e50914;
+  }
+  
+  .footer-text {
+    margin-top: 20px;
+    font-size: 0.8rem;
+    color: #ccc;
+  }
+  
+  /* Diseño Responsivo */
+  @media (max-width: 768px) {
+    .hero-title {
+      font-size: 2rem;
+    }
+  
+    .hero-subtitle {
+      font-size: 1.2rem;
+    }
+  
+    .hero-description {
+      font-size: 1rem;
+    }
+  
+    .email-input-container {
+      flex-direction: column;
+    }
+  
+    .email-input {
+      width: 100%;
+      margin-bottom: 10px;
+    }
+  
+    .get-started-button {
+      width: 100%;
+    }
+  
+    .section-title {
+      font-size: 1.5rem;
+    }
+  
+    .trending-grid {
+      grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    }
+  
+    .features-grid {
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    }
+  
+    .faq-grid {
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    }
+  
+    .footer-grid {
+      grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .hero-title {
+      font-size: 1.5rem;
+    }
+  
+    .hero-subtitle {
+      font-size: 1rem;
+    }
+  
+    .hero-description {
+      font-size: 0.9rem;
+    }
+  
+    .section-title {
+      font-size: 1.2rem;
+    }
+  
+    .trending-grid {
+      grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    }
+  
+    .features-grid {
+      grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    }
+  
+    .faq-grid {
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    }
+  
+    .footer-grid {
+      grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    }
+  }
